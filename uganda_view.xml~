@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<openerp>
+	<data>
+	
+		<record id="view_uganda_form" model="ir.ui.view" >
+			<field name="name">res.partner.address.form.inherit</field>
+			<field name="model">res.partner</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="base_contact.view_partner_form_inherit"/>
+			<field name="arch" type="xml">
+				<field name="state_id" position="replace" >
+				   		<field name="landmark" attrs="{'invisible':[('country_id.name','!=','Uganda')]}"/>
+				    	<field name="village" />
+						<field name="district_id"  />
+						<field name="county_id"  />
+						<field name="sub_county_id" />
+				</field>
+			</field>
+		</record>
+		
+		<record id="view_partner_form" model="ir.ui.view">
+			<field name="name">res.partner.vat.inherit</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_form" />
+			<field name="arch" type="xml">
+				<field name="website" position="after">
+					<group colspan="2" col="6">
+						<field name="tin" />
+					</group>
+				</field>
+			</field>
+		</record>
+		
+			
+		<record id="view_uganda_district_tree" model="ir.ui.view" >
+			<field name="name">res.country.district.tree</field>
+			<field name="model">res.country.district</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Districts">
+				   		<field name="country_id" />
+				    	<field name="region_id" />
+						<field name="name"  />
+						<field name="code" />
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_uganda_county_tree" model="ir.ui.view" >
+			<field name="name">res.district.county.tree</field>
+			<field name="model">res.district.county</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Counties">
+				   		<field name="district_id" />
+						<field name="name"  />
+						<field name="code" />
+				</tree>
+			</field>
+		</record>
+		
+		<record id="view_uganda_subcounty_tree" model="ir.ui.view" >
+			<field name="name">res.county.subcounty.tree</field>
+			<field name="model">res.county.subcounty</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="Sub-Counties">
+				   		<field name="county_id" />
+						<field name="name"  />
+						<field name="code" />
+				</tree>
+			</field>
+		</record>
+		
+		<record id="action_district" model="ir.actions.act_window">
+            <field name="name">Districts</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.country.district</field>
+            <field name="view_type">form</field>
+            <field name="help">Display and manage the list of all Districts that can be assigned to your partner records. You can create or delete districts to make sure the ones you are working on will be maintained.</field>
+        </record>
+        
+        <record id="action_county" model="ir.actions.act_window">
+            <field name="name">Counties</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.district.county</field>
+            <field name="view_type">form</field>
+            <field name="help">Display and manage the list of all Counties that can be assigned to your partner records. You can create or delete counties to make sure the ones you are working on will be maintained.</field>
+        </record>
+        
+        <record id="action_subcounty" model="ir.actions.act_window">
+            <field name="name">Sub-County</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.county.subcounty</field>
+            <field name="view_type">form</field>
+            <field name="help">Display and manage the list of all Sub-Counties that can be assigned to your partner records. You can create or delete sub-counties to make sure the ones you are working on will be maintained.</field>
+        </record>
+		
+        <menuitem action="action_district" id="menu_district_partner" parent="base.menu_localisation" sequence="0"/>
+		<menuitem action="action_county" id="menu_country_partner" parent="base.menu_localisation" sequence="0"/>
+		<menuitem action="action_subcounty" id="menu_subcounty_partner" parent="base.menu_localisation" sequence="0"/>
+		
+		
+		
+	</data>
+</openerp>
