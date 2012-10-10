@@ -2,7 +2,7 @@
 <openerp>
 
 
-	<!-- Districts as of 22/10/2011 from http://en.wikipedia.org/wiki/Districts_of_Uganda -->
+	<!-- Districts as of 22/10/2011 from the supplied by inistry of Local Government www.molg.go.ug -->
 	<data noupdate="1">
 		<record id="res_country_district_buikwe0" model="res.country.district">
 			<field name="code">82</field>
