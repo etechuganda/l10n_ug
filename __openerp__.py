@@ -30,10 +30,10 @@
     'update_xml': [
         'data/account.account.type.csv',
         'data/account.account.template.csv',
-        'data/account.chart.template.csv',
         'l10n_chart_ug_wizard.xml',
         'data/account.tax.template.csv',
         'data/account.tax.code.template.csv',
+        'data/account.chart.template.csv',
         'data/res.country.district.csv',
         'data/res.district.county.csv',
         'data/res.county.constituency.csv',
