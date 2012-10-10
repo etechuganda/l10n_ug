@@ -30,16 +30,16 @@
     'update_xml': [
         'data/account.account.type.csv',
         'data/account.account.template.csv',
-        'l10n_chart_ug_wizard.xml',
-        'data/account.tax.template.csv',
         'data/account.tax.code.template.csv',
         'data/account.chart.template.csv',
+        'data/account.tax.template.csv',
         'data/res.country.district.csv',
         'data/res.district.county.csv',
         'data/res.county.constituency.csv',
         'data/res.constituency.subcounty.csv',
         'data/res.subcounty.parish.csv',
         'data/res.parish.village.csv',
+        'l10n_chart_ug_wizard.xml',
         'partner_view.xml'
     ],
     'installable': True,
