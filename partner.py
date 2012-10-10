@@ -99,9 +99,9 @@ class res_partner_address(osv.osv):
         'district_id' : fields.many2one('res.country.district', 'District', domain="[('country_id','=',country_id)]"),
         'county_id': fields.many2one('res.district.county', 'County', domain="[('district_id','=',district_id)]"),
         'constituency_id': fields.many2one('res.county.constituency', 'Constituency', domain="[('county_id','=',county_id)]"),
-        'subcounty_id': fields.many2one('res.constituency.subcounty', 'Subcounty', domain="['constituency_id','=',constituency_id)]"),
-        'parish_id': fields.many2one('res.subcounty.parish','Parish', domain="['subcounty_id','=',subcounty_id)]"),
-        'village_id': fields.many2one('res.parish.village','Village', domain="['parish_id','=',parish_id)]"),
+        'subcounty_id': fields.many2one('res.constituency.subcounty', 'Subcounty', domain="[('constituency_id','=',constituency_id)]"),
+        'parish_id': fields.many2one('res.subcounty.parish','Parish', domain="[('subcounty_id','=',subcounty_id)]"),
+        'village_id': fields.many2one('res.parish.village','Village', domain="[('parish_id','=',parish_id)]"),
                 }
 res_partner_address()
 
