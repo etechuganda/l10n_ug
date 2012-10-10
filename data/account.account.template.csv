@@ -121,7 +121,7 @@
 7700,7700,"Exchange gains/losses","I060","other","account_type_expense","FALSE",
 7710,7710,"Other sundry expenses","I060","other","account_type_expense","FALSE",
 7850,7850,"Bad debts","I060","other","account_type_expense","FALSE",
-7910,7910,"Bank"," credit card and other financial charges","I060","other","account_type_expense","FALSE"
+7910,7910,"Bank,credit card and other financial charges","I060","other","account_type_expense","FALSE"
 "I070","I070","Depreciation expense","I000","view","account_type_view","FALSE",
 8000,8000,"Intangible assets depn","I070","other","account_type_expense","FALSE",
 8001,8001,"Tangible assets depn","I070","other","account_type_expense","FALSE",
