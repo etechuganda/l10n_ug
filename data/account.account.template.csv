@@ -63,7 +63,7 @@
 3020,3020,"Revaluation reserve","E000","other","account_type_equity","FALSE",
 3030,3030,"Other reserves","E000","other","account_type_equity","FALSE",
 3200,3200,"Profit and loss account","E000","other","account_type_profit_and_loss","FALSE",
-"PNL","PNL","Profit and Loss","UK0","view","account_type_view","FALSE",
+"PNL","PNL","Profit and Loss","UG0","view","account_type_view","FALSE",
 "F000","F000","Turnover","PNL","view","account_type_view","FALSE",
 4000,4000,"Sales category 1","F000","other","account_type_income","FALSE",
 4001,4001,"Sales category 2","F000","other","account_type_income","FALSE",
