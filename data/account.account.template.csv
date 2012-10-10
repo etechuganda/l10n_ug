@@ -97,9 +97,9 @@
 7601,7601,"Accounting","I025","other","account_type_expense","FALSE",
 7602,7602,"Auditing","I025","other","account_type_expense","FALSE",
 "I030","I030","Property costs","I000","view","account_type_view","FALSE",
-7110,7110,"Light"," heat and power","I030","other","account_type_expense","FALSE"
+7110,7110,"Light, heat and power","I030","other","account_type_expense","FALSE"
 7100,7100,"Rent and rates","I030","other","account_type_expense","FALSE",
-7120,7120,"Repairs"," renewals and maintenance","I030","other","account_type_expense","FALSE"
+7120,7120,"Repairs, renewals and maintenance","I030","other","account_type_expense","FALSE"
 "I040","I040","Vehicle expenses","I000","view","account_type_view","FALSE",
 7300,7300,"Car hire","I040","other","account_type_expense","FALSE",
 7301,7301,"Car fuel","I040","other","account_type_expense","FALSE",
