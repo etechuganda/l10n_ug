@@ -19,7 +19,7 @@
 #################################################################################
 
 {
-    'name': 'Uganda Localization',
+    'name': 'Uganda - Chart of Accounts',
     'description': 'Uganda Localization',
     'category': 'Localisation/Account Charts',
     'author': 'E-Tech Uganda',
@@ -32,6 +32,7 @@
         'data/account_tax_code_template.xml',
         'data/account.account.template.csv',
         'data/l10n_uganda_account_chart_template.xml',
+        'l10n_chart_ug_wizard.xml',
         'data/account_tax_template.xml',
         'data/res.country.district.csv',
         'data/res.district.county.csv',
