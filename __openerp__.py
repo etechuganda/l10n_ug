@@ -33,7 +33,12 @@
         'data/account.account.template.csv',
         'data/l10n_uganda_account_chart_template.xml',
         'data/account_tax_template.xml',
-        'data/res_country_district.xml',
+        'data/res.country.district.csv',
+        'data/res.district.county.csv',
+        'data/res.county.constituency.csv',
+        'data/res.constituency.subcounty.csv',
+        'data/res.subcounty.parish.csv',
+        'data/res.parish.village.csv',
         'partner_view.xml'
     ],
     'installable': True,
