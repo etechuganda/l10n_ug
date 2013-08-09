@@ -21,13 +21,12 @@
 {
     'name': 'Uganda - Chart of Accounts',
     'description': 'Uganda Localization',
-    'category': 'Localisation/Account Charts',
-    'author': 'E-Tech Uganda',
-    'website': 'http://etech.ug',
-    'version': '1.0',
+    'category': 'Localization/Account Charts',
+    'author': 'ICT Association Uganda (ICTAU)',
+    'website': 'http://ictau.ug',
+    'version': '2.0',
     'depends': ['account','account_chart'],
-    'init_xml': [],
-    'update_xml': [
+    'data': [
         'data/account.account.type.csv',
         'data/account.account.template.csv',
         'data/account.tax.code.template.csv',
@@ -43,7 +42,7 @@
         'partner_view.xml'
     ],
     'installable': True,
-    'active': False,
+    'images': ['images/config_chart_l10n_ug.jpeg','images/l10n_ug_chart.jpeg'],
 }
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

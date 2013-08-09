@@ -91,9 +91,9 @@ class ParishVillage(osv.osv):
 ParishVillage()
 
 
-class res_partner_address(osv.osv):
-    _name = 'res.partner.address'
-    _inherit = 'res.partner.address'
+class res_partner(osv.osv):
+    _name = 'res.partner'
+    _inherit = 'res.partner'
     _columns = {
         'landmark' : fields.char('Closest Landmark', size=64),
         'district_id' : fields.many2one('res.country.district', 'District', domain="[('country_id','=',country_id)]"),
@@ -102,15 +102,7 @@ class res_partner_address(osv.osv):
         'subcounty_id': fields.many2one('res.constituency.subcounty', 'Subcounty', domain="[('constituency_id','=',constituency_id)]"),
         'parish_id': fields.many2one('res.subcounty.parish','Parish', domain="[('subcounty_id','=',subcounty_id)]"),
         'village_id': fields.many2one('res.parish.village','Village', domain="[('parish_id','=',parish_id)]"),
-                }
-res_partner_address()
-
-class res_partner(osv.osv):
-   
-    _name = 'res.partner'
-    _inherit = 'res.partner'
-    _columns = {
-        'tin' : fields.char("Taxpayer Identification No.",size=10),
+	'tin' : fields.char("Taxpayer Identification No.",size=10),
                 }
 res_partner()
 
