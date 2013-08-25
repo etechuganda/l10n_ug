@@ -9,7 +9,7 @@
 			<field name="inherit_id" ref="base.view_partner_form"/>
 			<field name="arch" type="xml">
 				<field name="state_id" position="after" >
-				   	<field name="landmark" />
+				   	<field name="landmark" placeholder="Landmark"/>
 					<field name="district_id"  />
 					<field name="county_id"  />
 					<field name="constituency_id" />
