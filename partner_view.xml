@@ -9,13 +9,13 @@
 			<field name="inherit_id" ref="base.view_partner_form"/>
 			<field name="arch" type="xml">
 				<field name="state_id" position="after" >
-				   	<field name="landmark" placeholder="Landmark"/>
-					<field name="district_id"  />
-					<field name="county_id"  />
-					<field name="constituency_id" />
-					<field name="subcounty_id" />
-					<field name="parish_id" />
-					<field name="village_id" />
+				   	<field name="landmark" placeholder="Closest Landmark"/>
+					<field name="district_id" placeholder="District" />
+					<field name="county_id" placeholder="County" />
+					<field name="constituency_id" placeholder="Constituency" />
+					<field name="subcounty_id" placeholder="Sub-County"/>
+					<field name="parish_id" placeholder="Parish"/>
+					<field name="village_id" placeholder="Village"/>
 				</field>
 			</field>
 		</record>
@@ -27,7 +27,7 @@
 			<field name="arch" type="xml">
 				<field name="property_payment_term" position="after">
 					<group colspan="2" col="6">
-						<field name="tin" />
+						<field name="tin" placeholder="T.I.N."/>
 					</group>
 				</field>
 			</field>
