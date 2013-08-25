@@ -95,14 +95,14 @@ class res_partner(osv.osv):
     _name = 'res.partner'
     _inherit = 'res.partner'
     _columns = {
-        'landmark' : fields.char('Closest Landmark', placeholder="Closest Landmark", size=64),
-        'district_id' : fields.many2one('res.country.district', 'District', placeholder="District", domain="[('country_id','=',country_id)]"),
-        'county_id': fields.many2one('res.district.county', 'County', placeholder="County", domain="[('district_id','=',district_id)]"),
-        'constituency_id': fields.many2one('res.county.constituency', 'Constituency', placeholder="Constituency",  domain="[('county_id','=',county_id)]"),
-        'subcounty_id': fields.many2one('res.constituency.subcounty', 'Subcounty', placeholder="Sub-County", domain="[('constituency_id','=',constituency_id)]"),
-        'parish_id': fields.many2one('res.subcounty.parish','Parish', placeholder="Parish", domain="[('subcounty_id','=',subcounty_id)]"),
-        'village_id': fields.many2one('res.parish.village','Village', placeholder="Village", domain="[('parish_id','=',parish_id)]"),
-	'tin' : fields.char("Taxpayer Identification No.", placeholder="T.I.N.", size=10),
+        'landmark' : fields.char('Closest Landmark', size=64),
+        'district_id' : fields.many2one('res.country.district', 'District', domain="[('country_id','=',country_id)]"),
+        'county_id': fields.many2one('res.district.county', 'County', domain="[('district_id','=',district_id)]"),
+        'constituency_id': fields.many2one('res.county.constituency', 'Constituency',  domain="[('county_id','=',county_id)]"),
+        'subcounty_id': fields.many2one('res.constituency.subcounty', 'Subcounty', domain="[('constituency_id','=',constituency_id)]"),
+        'parish_id': fields.many2one('res.subcounty.parish','Parish', domain="[('subcounty_id','=',subcounty_id)]"),
+        'village_id': fields.many2one('res.parish.village','Village', domain="[('parish_id','=',parish_id)]"),
+	'tin' : fields.char("Taxpayer Identification No.", size=10),
                 }
 res_partner()
 
